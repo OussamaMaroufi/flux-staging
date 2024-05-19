@@ -1,4 +1,4 @@
-apiVersion: helm.toolkit.fluxcd.io/v1beta1
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: flask-app-demo
@@ -6,7 +6,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: helm
+      chart: ./helm
       sourceRef:
         kind: GitRepository
         name: flask-app-demo
