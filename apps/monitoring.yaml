@@ -24,6 +24,9 @@ spec:
       retries: 1
       strategy: rollback
   values:
+      service:
+        type: NodePort
+        nodePort: 30036
       image:
           repository: docker.io/grafana/grafana
           tag: ""
