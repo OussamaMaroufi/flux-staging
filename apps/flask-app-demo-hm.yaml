@@ -21,4 +21,9 @@ spec:
       tag: "0.0.1"
     name: flask-demo-app-stg
   install:
-    createNamespace: true
+    createNamespace: true  # Force the creatin of namespace if does not  exist in the cluster.
+    remediation:
+      retries: 3
+  upgrade:
+    remediation:
+      retries: 3
