@@ -27,7 +27,7 @@ spec:
   values:
       service:
         type: NodePort
-        nodePort: 30036
+        nodePort: 30000
       image:
           repository: docker.io/grafana/grafana
           tag: ""
