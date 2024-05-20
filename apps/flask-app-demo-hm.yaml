@@ -14,7 +14,7 @@ spec:
       interval: 1m
   targetNamespace: staging 
   values:
-    nodePort: 30001
+    #nodePort: 30001
     namespace: staging
     deployment:
       image: "oussamamaaroufi1/example-app-1"
