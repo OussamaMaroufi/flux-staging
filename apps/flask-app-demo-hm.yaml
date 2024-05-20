@@ -12,10 +12,12 @@ spec:
         kind: GitRepository
         name: flask-app-demo
       interval: 1m
-  targetNamespace: staging
+  targetNamespace: staging 
   values:
     namespace: staging
     deployment:
       image: "oussamamaaroufi1/example-app-1"
       tag: "0.0.1"
     name: flask-demo-app-stg
+  install:
+    createNamespace: true
